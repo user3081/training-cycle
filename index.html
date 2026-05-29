@@ -71,11 +71,9 @@ const QUOTES=[
   {text:"Your day doesn't begin when you wake up. It begins the night before.",tag:"on sleep"},
   {text:"Make sleep your number one priority above everything else.",tag:"on recovery"},
   {text:"Food isn't just food. It's medicine.",tag:"on nutrition"},
-  {text:"All food is guilty until proven innocent.",tag:"on eating"},
   {text:"Pick one small thing. Do it today. Do it again tomorrow.",tag:"on consistency"},
   {text:"Balance is possibly the most overlooked pillar of longevity.",tag:"on balance"},
   {text:"Small efforts today create stability decades from now.",tag:"on the long game"},
-  {text:"Don't die.",tag:"the whole philosophy"},
   {text:"When sleep is aligned, everything else follows.",tag:"on routine"},
   {text:"Progressive overload.",tag:"on getting stronger"},
 ];
@@ -121,13 +119,13 @@ const PHASES=[
     trainingNote:"Your strongest window. Testosterone and estrogen peak together. Schedule your hardest soccer game, fastest run, heaviest lift right here. Norwegian 4x4 this week — you won't be at this peak again for 26 days. Use swimming between peak sessions as active recovery. This is what you train for.",
     nutritionNote:"Your body uses carbs most efficiently right now. Complex carbs timed around your hardest sessions. Keep protein high to match elevated output. Don't undereat on peak days — fuel the machine.",
     week:[
-      {day:"Mon",activity:"Gym — heavy strength, PR attempt",intensity:"high",macro:"High carb",foods:"Rice or pasta, lean protein, colorful veg, fruit",pillars:["S","MOB","BAL"]},
-      {day:"Tue",activity:"Swim — build effort + Norwegian 4x4",intensity:"high",macro:"Moderate-high carb",foods:"Oats + banana pre, eggs + sweet potato post",pillars:["HI","Z2","MOB","BAL"]},
-      {day:"Wed",activity:"Soccer — peak performance",intensity:"high",macro:"High carb day",foods:"Complex carbs 2–3hrs pre, carbs + protein post",pillars:["HI","Z2","MOB","BAL"]},
-      {day:"Thu",activity:"Walk — active recovery",intensity:"low",macro:"Moderate carb + fiber",foods:"Grains, avocado, lentils, light salad",pillars:["Z2","MOB","BAL"]},
-      {day:"Fri",activity:"Gym — power + functional",intensity:"high",macro:"Moderate-high carb",foods:"Quinoa, salmon, roasted sweet potato",pillars:["S","MOB","BAL"]},
-      {day:"Sat",activity:"Run — push it, best effort",intensity:"high",macro:"Moderate-high carb",foods:"Banana + almond butter pre, protein + fruit post",pillars:["HI","Z2","MOB","BAL"]},
-      {day:"Sun",activity:"Swim — easy recovery",intensity:"low",macro:"Low carb + high fiber",foods:"Veg-heavy plate, legumes, healthy fats, hydrate",pillars:["Z2","MOB","BAL"]},
+      {day:"Mon",activity:"Gym — heavy strength, PR attempt",intensity:"high",macro:"High carb",foods:"Rice or pasta, lean protein, colorful veg, fruit",:["S","MOB","BAL"]},
+      {day:"Tue",activity:"Swim — build effort + Norwegian 4x4",intensity:"high",macro:"Moderate-high carb",foods:"Oats + banana pre, eggs + sweet potato post",:["HI","Z2","MOB","BAL"]},
+      {day:"Wed",activity:"Soccer — peak performance",intensity:"high",macro:"High carb day",foods:"Complex carbs 2–3hrs pre, carbs + protein post",:["HI","Z2","MOB","BAL"]},
+      {day:"Thu",activity:"Walk — active recovery",intensity:"low",macro:"Moderate carb + fiber",foods:"Grains, avocado, lentils, light salad",:["Z2","MOB","BAL"]},
+      {day:"Fri",activity:"Gym — power + functional",intensity:"high",macro:"Moderate-high carb",foods:"Quinoa, salmon, roasted sweet potato",:["S","MOB","BAL"]},
+      {day:"Sat",activity:"Run — push it, best effort",intensity:"high",macro:"Moderate-high carb",foods:"Banana + almond butter pre, protein + fruit post",:["HI","Z2","MOB","BAL"]},
+      {day:"Sun",activity:"Swim — easy recovery",intensity:"low",macro:"Low carb + high fiber",foods:"Veg-heavy plate, legumes, healthy fats, hydrate",:["Z2","MOB","BAL"]},
     ]
   },
   {
@@ -137,13 +135,13 @@ const PHASES=[
     trainingNote:"Early luteal (days 16–20): solid energy, maintain training. Late luteal (days 21–26): progesterone peaks, fatigue and cravings increase. Swimming is ideal — low impact, mood-regulating, and still covers Zone 2. Reduce volume, not quality. Recovery is training.",
     nutritionNote:"Complex carb cravings are physiology, not weakness — progesterone slightly raises your metabolic rate. Magnesium-rich foods ease PMS. Keep protein high. Ease caffeine in the final days.",
     week:[
-      {day:"Mon",activity:"Gym — moderate strength",intensity:"moderate",macro:"Moderate carb + protein",foods:"Oats, chicken, pumpkin seeds (magnesium!), dark greens",pillars:["S","MOB","BAL"]},
-      {day:"Tue",activity:"Swim — steady, relaxed",intensity:"low",macro:"Moderate carb",foods:"Banana, almond butter toast, hydrate well",pillars:["Z2","MOB","BAL"]},
-      {day:"Wed",activity:"Soccer (early luteal) or walk (late luteal)",intensity:"moderate",macro:"Moderate carb",foods:"Complex carbs pre, protein post",pillars:["HI","Z2","MOB","BAL"]},
-      {day:"Thu",activity:"Walk — active recovery",intensity:"low",macro:"Low carb + high fiber",foods:"Fiber-rich veg, seeds, lentils, dark chocolate",pillars:["Z2","MOB","BAL"]},
-      {day:"Fri",activity:"Gym — light functional",intensity:"low",macro:"Moderate carb",foods:"Sweet potato, turkey or fish, roasted veg",pillars:["S","MOB","BAL"]},
-      {day:"Sat",activity:"Easy run or walk",intensity:"low",macro:"Moderate carb",foods:"Warm whole grains, omega-3 fats, berries",pillars:["Z2","MOB","BAL"]},
-      {day:"Sun",activity:"Swim — gentle or rest",intensity:"low",macro:"Low carb + fiber + fats",foods:"Avocado, nuts, legumes, leafy greens, chamomile tea",pillars:["Z2","MOB","BAL"]},
+      {day:"Mon",activity:"Gym — moderate strength",intensity:"moderate",macro:"Moderate carb + protein",foods:"Oats, chicken, pumpkin seeds (magnesium!), dark greens",:["S","MOB","BAL"]},
+      {day:"Tue",activity:"Swim — steady, relaxed",intensity:"low",macro:"Moderate carb",foods:"Banana, almond butter toast, hydrate well",:["Z2","MOB","BAL"]},
+      {day:"Wed",activity:"Soccer (early luteal) or walk (late luteal)",intensity:"moderate",macro:"Moderate carb",foods:"Complex carbs pre, protein post",:["HI","Z2","MOB","BAL"]},
+      {day:"Thu",activity:"Walk — active recovery",intensity:"low",macro:"Low carb + high fiber",foods:"Fiber-rich veg, seeds, lentils, dark chocolate",:["Z2","MOB","BAL"]},
+      {day:"Fri",activity:"Gym — light functional",intensity:"low",macro:"Moderate carb",foods:"Sweet potato, turkey or fish, roasted veg",:["S","MOB","BAL"]},
+      {day:"Sat",activity:"Easy run or walk",intensity:"low",macro:"Moderate carb",foods:"Warm whole grains, omega-3 fats, berries",:["Z2","MOB","BAL"]},
+      {day:"Sun",activity:"Swim — gentle or rest",intensity:"low",macro:"Low carb + fiber + fats",foods:"Avocado, nuts, legumes, leafy greens, chamomile tea",:["Z2","MOB","BAL"]},
     ]
   }
 ];
@@ -229,7 +227,7 @@ const BLUEPRINT=[
   },
 ];
 
-// ── PILLARS DATA ─────────────────────────────────────────────────
+// ──  DATA ─────────────────────────────────────────────────
 const PILLARS_DATA=[
   {
     num:1,name:"Strength",icon:"🏋️",
@@ -355,7 +353,7 @@ function TabNav({tab,setTab}){
   const tabs=[
     {id:"weekly",label:"Weekly Plan"},
     {id:"blueprint",label:"Daily Structure"},
-    {id:"pillars",label:"5 Pillars of Exercise"},
+    {id:"pillars",label:"Exercise Pillars"},
   ];
   return e("div",{style:{display:"flex",gap:"4px",marginBottom:"18px",background:"#EDECE8",borderRadius:"10px",padding:"4px"}},
     tabs.map(t=>e("button",{
