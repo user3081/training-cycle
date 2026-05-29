@@ -432,23 +432,9 @@ function WeeklyView({currentId,cycleDay,todayDow,currentPhase}){
     ),
 
     // Daily stack reminder
-    e("div",{style:{padding:"12px 14px",marginBottom:"10px",background:"#fff",borderRadius:"8px",border:"0.5px solid #e0e0e0"}},
-      e("div",{style:{display:"flex",alignItems:"center",gap:"8px",marginBottom:"8px"}},
-        e("span",{style:{fontSize:"11px",fontWeight:500,color:"#888",letterSpacing:"0.04em"}},"\uD83D\uDCCC DAILY STACK")
-      ),
-      e("div",{style:{display:"flex",flexDirection:"column",gap:"6px"}},
-        e("div",{style:{display:"flex",gap:"8px",alignItems:"flex-start"}},
-          e("span",{style:{fontSize:"13px",flexShrink:0}}),
-          e("span",{style:{fontSize:"12px",color:"#444",lineHeight:1.5}},"\uD83E\uDDD8\u200A 5–10 min mobility  ·  \uD83E\uDDB5\u200A 1–2 min balance drill  ·  \uD83D\uDEB6\u200A Walk after meals")
-        ),
-        e("div",{style:{display:"flex",gap:"8px",alignItems:"flex-start",paddingTop:"4px",borderTop:"0.5px solid #f0ede8"}},
-          e("span",{style:{fontSize:"13px",flexShrink:0}},"🎯"),
-          e("span",{style:{fontSize:"12px",color:"#444",lineHeight:1.55}},
-            e("strong",{style:{color:"#1a1a1a",fontWeight:500}},"Focus on completing your top 3 mission-critical tasks. "),
-            "Everything else is noise. This is the most powerful move you can make."
-          )
-        )
-      )
+    e("div",{style:{padding:"10px 14px",marginBottom:"10px",background:"#fff",borderRadius:"8px",border:"0.5px solid #e0e0e0",display:"flex",alignItems:"center",gap:"10px",flexWrap:"wrap"}},
+      e("span",{style:{fontSize:"11px",fontWeight:500,color:"#888",letterSpacing:"0.04em"}},"\uD83D\uDCCC DAILY MOVEMENT"),
+      e("span",{style:{fontSize:"12px",color:"#444"}},"🧘\u200A 5–10 min mobility  ·  🦵\u200A 1–2 min balance drill  ·  🚶\u200A Walk after meals")
     ),
 
     // Day cards
@@ -692,8 +678,19 @@ function App(){
       )
     ),
 
-    // Quote bar
-    e(QuoteBar,{quotes:QUOTES,idx:qIdx}),
+    // Focus reminder
+    e("div",{style:{
+      background:"#fff",
+      borderRadius:"10px",border:"0.5px solid #e0e0e0",
+      padding:"14px 20px",marginBottom:"16px",
+      display:"flex",alignItems:"center",gap:"12px"
+    }},
+      e("span",{style:{fontSize:"20px",flexShrink:0}},"🎯"),
+      e("p",{style:{fontSize:"14px",color:"#1a1a1a",margin:0,lineHeight:1.55}},
+        e("strong",{style:{fontWeight:500}},"Focus on completing your top 3 mission-critical tasks. "),
+        "Everything else is noise."
+      )
+    ),
 
     // Tab nav
     e(TabNav,{tab,setTab}),
